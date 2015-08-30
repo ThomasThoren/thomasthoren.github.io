@@ -1,0 +1,13 @@
+# Site settings
+title: Thomas Thoren
+email: thomasjthoren@gmail.com
+description:
+  Thomas Thoren is a data journalist and web developer for The Lens in New Orleans.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://thomasthoren.com" # the base hostname & protocol for your site
+twitter_username: thomasjthoren
+github_username:  thomasthoren
+highlighter: pygments
+
+# Build settings
+markdown: kramdown
