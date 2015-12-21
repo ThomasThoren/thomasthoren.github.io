@@ -10,7 +10,7 @@
 }
 
 .site-title {
-  font-size: 26px;
+  font-size: 36px;
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -215,12 +215,8 @@
  * Clips
  */
 .clip-wrapper {
-  padding: 25px 0 0 0;
+  padding: 50px 0 10px 0;
   border-top: 1px solid #CCC;
-
-  // &:last-of-type {
-  //   border: 0;
-  // }
 }
 
 .clip-title,
@@ -228,19 +224,10 @@
   display: inline-block;
 }
 .clip-title {
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 1.2em;
   width: 75%;
-  color: #000;
-  // letter-spacing: -1px;
-  // line-height: 1;
-
-  // @include media-query($on-laptop) {
-  //   font-size: 36px;
-  // }
 
   & a {
-    color: #000;
     text-decoration: none;
   }
   & a:hover {
@@ -248,7 +235,7 @@
   }
 }
 .clip-date {
-  font-size: 12px;
+  font-size: 0.8em;
   color: gray;
   width: 25%;
   text-align: right;
@@ -257,58 +244,12 @@
 .clip-image {
   width: auto;
   border: 1px solid gray;
-  // display: block;
-  // margin: 0 auto;
 }
 
 .clip-description {
-  font-size: 14px;
+  font-size: 0.9em;
 }
-.clip-tools {
-  font-size: 14px;
-  // padding-top: 10px;
-}
-
-.clip-tools-title {
-  font-weight: bold;
-}
-
-.clip-content {
-  margin-bottom: $spacing-unit;
-
-  h2 {
-    font-size: 32px;
-
-    @include media-query($on-laptop) {
-      font-size: 28px;
-    }
-  }
-
-  h3 {
-    font-size: 26px;
-
-    @include media-query($on-laptop) {
-      font-size: 22px;
-    }
-  }
-
-  h4 {
-    font-size: 20px;
-
-    @include media-query($on-laptop) {
-      font-size: 18px;
-    }
-  }
-}
-
-/*
- * Overal
- */
-.section {
-  margin-top: 20px;
-}
-
-.section-title {
-  font-size: 24px;
-  font-weight: bold;
+.clip-tools,
+.clip-repo {
+  font-size: 0.9em;
 }

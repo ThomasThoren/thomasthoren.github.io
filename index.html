@@ -12,7 +12,10 @@ layout: default
       <div class="clip-title"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div><div class="clip-date">{{ clip.date | date: "%b. %-d, %Y" }}</div>
       <div><a href="{{ clip.clip_url }}"><img class="clip-image" src="{{ clip.image_url }}" alt="{{ clip.image_alt }}"></a></div>
       <p class="clip-description">{{ clip.description }}</p>
-      <div class="clip-tools"><span class="clip-tools-title">Tools</span>: {{ clip.tools }}</div>
+      {% if clip.repo %}
+        <div class="clip-repo"><a href="{{ clip.repo }}">Source code</a></div>
+      {% endif %}
+      <div class="clip-tools">Tools: {{ clip.tools }}</div>
     </div>
     {% endfor %}
   </div>
