@@ -1,6 +1,14 @@
-.DS_Store
+.idea/*
+.sass-cache/*
+_drafts/*
+misc/*
+tmp/*
+temp/*
 
-.sass-cache
-_drafts
-_site
-misc
+# The generated site:
+_site/*
+
+.DS_Store
+*.log
+*.pyc
+*.sql
