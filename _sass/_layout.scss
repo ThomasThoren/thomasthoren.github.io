@@ -10,8 +10,9 @@
 }
 
 .site-title {
-  font-size: 36px;
-  line-height: 56px;
+  font-size: 28px;
+  padding: 10px 0 0 0;
+  line-height: 30px;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
@@ -24,22 +25,23 @@
 
 .site-nav {
   float: right;
-  line-height: 56px;
+  font-size: 14px;
+  line-height: 30px;
 
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
+    vertical-align: bottom;
 
     // Gaps between nav items, but not on the first one
     &:not(:first-child) {
-      margin-left: 20px;
+      margin-left: 5px;
     }
   }
 }
 
 
-
-/**
+/*
  * Site footer
  */
 .site-footer {
@@ -51,11 +53,6 @@
   display: inline-block;
   color: #828282;
   padding-right: 25px;
-  // width: 20%;
-
-  & a {
-    color: #828282;
-  }
 }
 
 @media screen and (max-width: 650px) {
@@ -133,12 +130,11 @@
 }
 
 
-
-/**
+/*
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: 0 0 $spacing-unit 0;
 }
 
 .page-heading {
@@ -165,8 +161,7 @@
 }
 
 
-
-/**
+/*
  * Posts
  */
 .post-header {
@@ -211,21 +206,37 @@
   }
 }
 
-/**
+
+
+.section {
+  padding: 25px 0 0 0;
+}
+.section-title {
+  font-size: 1.5em;
+  border-bottom: 1px solid #CCC;
+}
+
+
+/*
  * Clips
  */
 .clip-wrapper {
-  padding: 50px 0 10px 0;
-  border-top: 1px solid #CCC;
+  padding: 15px 0 10px 0;
+}
+.education-wrapper {
+  padding: 10px 0 0 0;
 }
 
 .clip-title,
-.clip-date {
+.clip-date,
+.education-title,
+.education-date {
   display: inline-block;
 }
-.clip-title {
+.clip-title,
+.education-title {
   font-size: 1.2em;
-  width: 75%;
+  width: 70%;
 
   & a {
     text-decoration: none;
@@ -234,10 +245,15 @@
     text-decoration: underline;
   }
 }
-.clip-date {
+.education-title {
+  font-size: 0.9em;
+}
+
+.clip-date,
+.education-date {
   font-size: 0.8em;
   color: gray;
-  width: 25%;
+  width: 30%;
   text-align: right;
 }
 
@@ -246,10 +262,92 @@
   border: 1px solid gray;
 }
 
-.clip-description {
+.clip-description,
+.education-description,
+.education-institution {
   font-size: 0.9em;
 }
+.clip-description { padding-top: 5px; }
 .clip-tools,
 .clip-repo {
   font-size: 0.9em;
 }
+
+/*
+ * Resume
+ */
+.resume-wrapper {
+  margin: 20px 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid lightgray;
+}
+
+.resume-name {
+  font-size: 36px;
+  padding-bottom: 10px;
+}
+.resume-contact {
+  font-size: 12px;
+}
+
+.resume-section-title {
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.resume-section-name {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.resume-section-date {
+  font-size: 14px;
+  text-align: right;
+}
+.resume-section-description {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 40em) {
+  .resume-wrapper {
+    margin: 30px 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .resume-name {
+    font-size: 54px;
+    padding-bottom: 10px;
+  }
+}
+
+/*
+ * Misc.
+ */
+.tiny-pad-right { padding-right: 1px; }
+.medium-pad-bottom { padding-bottom: 15px; }
+.no-pad-left { padding-left: 0; }
+.no-pad-right { padding-right: 0; }
+
+
+/*
+ * Mobile width
+ */
+@media screen and (max-width: 600px) {
+}
+
+
+/*
+ * Medium width
+ */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+}
+
+
+/*
+ * Large width
+ */
+@media screen and (min-width: 1025px) {
+}
+

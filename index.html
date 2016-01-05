@@ -3,13 +3,14 @@ layout: default
 ---
 <div class="home">
   <div class="intro-text">
-    Data reporter at <a href="http://thelensnola.org">The Lens</a> in New Orleans, where I work as a reporter, developer and designer.
+    Journalist at <a href="http://thelensnola.org">The Lens</a> in New Orleans, where I work as a reporter, developer and designer.
   </div>
 
   <div class="section" id="clips">
+    <div class="section-title">Clips</div>
     {% for clip in site.clips reversed %}
     <div class="clip-wrapper">
-      <div class="clip-title"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div><div class="clip-date">{{ clip.date | date: "%b. %-d, %Y" }}</div>
+      <div class="clip-title"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div><div class="clip-date">{{ clip.date }}</div>
       <div><a href="{{ clip.clip_url }}"><img class="clip-image" src="{{ clip.image_url }}" alt="{{ clip.image_alt }}"></a></div>
       <p class="clip-description">{{ clip.description }}</p>
       {% if clip.repo %}
@@ -18,5 +19,17 @@ layout: default
       <div class="clip-tools">Tools: {{ clip.tools }}</div>
     </div>
     {% endfor %}
+  </div>
+
+  <div class="section" id="education">
+    <div class="section-title">Education</div>
+      <div class="education-wrapper">
+        <div class="education-title">M.S., news-editorial journalism</div><div class="education-date">2013</div>
+        <div class="education-institution">University of Illinois</div>
+      </div>
+      <div class="education-wrapper">
+        <div class="education-title">B.S., structural engineering</div><div class="education-date">2012</div>
+        <div class="education-institution">University of Illinois</div>
+      </div>
   </div>
 </div>

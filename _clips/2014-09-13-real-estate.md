@@ -1,10 +1,10 @@
 ---
 title: Property sales tracker
-date: 2014-09-13
+date: "Sept. 13, 2014"
 clip_url: http://vault.thelensnola.org/realestate/
 image_url: /images/thumbnails/2014-09-13-real-estate.png
 image_alt: Property sales tracker
-description: Combines a daily, automated web scraper with an ongoing database to present new sales and their context within past sales.
+description: Combines a daily, automated web scraper with a back-end database to show past and present property sales.
 repo: https://github.com/TheLens/realestate
 tools: Flask, JavaScript, Leaflet, PostGIS, PostgreSQL, Python, SQL Alchemy, web scraping
 ---

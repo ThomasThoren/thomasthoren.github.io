@@ -1,6 +1,6 @@
 # Site settings
 title: Thomas Thoren
-description: "Open-data reporter at The Lens in New Orleans, where I work as a reporter, developer and designer."
+description: "Journalist at The Lens in New Orleans, working as a reporter, developer and designer."
 email: thomasjthoren@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://thomasthoren.com" # the base hostname & protocol for your site
