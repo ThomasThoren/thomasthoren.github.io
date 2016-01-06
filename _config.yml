@@ -12,3 +12,4 @@ gems:
   - jekyll-sitemap
 collections:
   - clips
+  - side_projects

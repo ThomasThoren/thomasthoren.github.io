@@ -21,15 +21,30 @@ layout: default
     {% endfor %}
   </div>
 
+  <div class="section" id="side-projects">
+    <div class="section-title">Side projects</div>
+    {% for side_project in site.side_projects reversed %}
+    <div class="clip-wrapper">
+      <div class="clip-title"><a href="{{ side_project.side_project_url }}">{{ side_project.title }}</a></div>
+      <div><a href="{{ side_project.side_project_url }}"><img class="clip-image" src="{{ side_project.image_url }}" alt="{{ side_project.image_alt }}"></a></div>
+      <p class="clip-description">{{ side_project.description }}</p>
+      {% if side_project.repo %}
+        <div class="clip-repo"><a href="{{ side_project.repo }}">Source code</a></div>
+      {% endif %}
+      <div class="clip-tools">Tools: {{ side_project.tools }}</div>
+    </div>
+    {% endfor %}
+  </div>
+
   <div class="section" id="education">
     <div class="section-title">Education</div>
-      <div class="education-wrapper">
-        <div class="education-title">M.S., news-editorial journalism</div><div class="education-date">2013</div>
-        <div class="education-institution">University of Illinois</div>
-      </div>
-      <div class="education-wrapper">
-        <div class="education-title">B.S., structural engineering</div><div class="education-date">2012</div>
-        <div class="education-institution">University of Illinois</div>
-      </div>
+    <div class="education-wrapper">
+      <div class="education-title">M.S., news-editorial journalism</div><div class="education-date">2013</div>
+      <div class="education-institution">University of Illinois</div>
+    </div>
+    <div class="education-wrapper">
+      <div class="education-title">B.S., structural engineering</div><div class="education-date">2012</div>
+      <div class="education-institution">University of Illinois</div>
+    </div>
   </div>
 </div>

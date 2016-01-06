@@ -2,20 +2,13 @@
  * Site header
  */
 .site-header {
-  // border-bottom: 1px solid $grey-color-light;
-  min-height: 56px;
-
   // Positioning context for the mobile navigation icon
   position: relative;
+  padding: 10px 0 20px 0;
 }
 
 .site-title {
-  font-size: 28px;
-  padding: 10px 0 0 0;
-  line-height: 30px;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
+  font-size: 36px;
 
   &,
   &:visited {
@@ -214,6 +207,7 @@
 .section-title {
   font-size: 1.5em;
   border-bottom: 1px solid #CCC;
+  // font-family: $secondary-font-family;
 }
 
 
@@ -235,7 +229,7 @@
 }
 .clip-title,
 .education-title {
-  font-size: 1.2em;
+  font-size: 1.1em;
   width: 70%;
 
   & a {
@@ -245,6 +239,7 @@
     text-decoration: underline;
   }
 }
+// .clip-title { font-family: $secondary-font-family; }
 .education-title {
   font-size: 0.9em;
 }
@@ -255,6 +250,7 @@
   color: gray;
   width: 30%;
   text-align: right;
+  // font-family: $secondary-font-family;
 }
 
 .clip-image {
