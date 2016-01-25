@@ -1,14 +1,15 @@
-.idea/*
-.sass-cache/*
-_drafts/*
-misc/*
-tmp/*
-temp/*
-
-# The generated site:
-_site/*
+.idea
+.ruby-version
+.sass-cache
+_drafts/
+misc/
+public/
+tmp/
+temp/
 
 .DS_Store
+Gemfile.lock
+*.gem
 *.log
 *.pyc
 *.sql
