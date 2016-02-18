@@ -10,7 +10,7 @@ layout: default
     <div class="section-title">Clips</div>
     {% for clip in site.clips reversed %}
     <div class="clip-wrapper">
-      <div class="clip-title"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div><div class="clip-date">{{ clip.date }}</div>
+      <div class="clip-title"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div><div class="clip-date">{{ clip.string_date }}</div>
       <div><a href="{{ clip.clip_url }}"><img class="clip-image" src="{{ clip.image_url }}" alt="{{ clip.image_alt }}"></a></div>
       <p class="clip-description">{{ clip.description }}</p>
       {% if clip.repo %}

@@ -1,6 +1,6 @@
 ---
 title: Property sales tracker
-date: "Sept. 13, 2014"
+string_date: "Sept. 13, 2014"
 clip_url: http://vault.thelensnola.org/realestate/
 image_url: /images/thumbnails/2014-09-13-real-estate.png
 image_alt: Property sales tracker

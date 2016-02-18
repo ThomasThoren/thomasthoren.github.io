@@ -1,6 +1,6 @@
 ---
 title: Contracts tracker
-date: "June 12, 2014"
+string_date: "June 12, 2014"
 clip_url: http://vault.thelensnola.org/contracts/
 image_url: /images/thumbnails/2014-06-12-contracts.png
 image_alt: Government contracts tracker
