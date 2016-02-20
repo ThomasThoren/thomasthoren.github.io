@@ -1,14 +1,20 @@
-.idea
-.ruby-version
-.sass-cache
+.bundle/
+.idea/
+.ruby-version/
+.sass-cache/
 _drafts/
 misc/
 public/
 tmp/
 temp/
 
+images/raw/
+
 .DS_Store
 Gemfile.lock
+blog.html
+resume.html
+
 *.gem
 *.log
 *.pyc
