@@ -9,6 +9,7 @@ tmp/
 temp/
 
 images/raw/
+images/thumbnails/*[0-9].png
 
 .DS_Store
 Gemfile.lock
