@@ -11,7 +11,7 @@ layout: default
     {% for clip in site.clips reversed %}
     <div class="clip-wrapper">
       <div class="clip-title"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div><div class="clip-date">{{ clip.string_date }}</div>
-      <div><a href="{{ clip.clip_url }}"><img class="clip-image" src="{{ clip.image_url }}" alt="{{ clip.image_alt }}"></a></div>
+      <div><a href="{{ clip.clip_url }}"><img class="clip-image" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a></div>
       <p class="clip-description">{{ clip.description }}</p>
       {% if clip.repo %}
         <div class="clip-repo"><a href="{{ clip.repo }}">Source code</a></div>
