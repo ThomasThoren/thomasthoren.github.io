@@ -228,7 +228,8 @@
   display: inline-block;
 }
 .clip-title,
-.education-title {
+.education-title,
+.project-title {
   font-size: 1.1em;
   width: 70%;
 
@@ -239,6 +240,14 @@
     text-decoration: underline;
   }
 }
+
+.project-title {
+  width: 100%;
+}
+.education-title {
+  width: 90%;
+}
+
 // .clip-title { font-family: $secondary-font-family; }
 .education-title {
   font-size: 0.9em;
@@ -251,6 +260,10 @@
   width: 30%;
   text-align: right;
   // font-family: $secondary-font-family;
+}
+
+.education-date {
+  width: 10%;
 }
 
 .clip-image {
