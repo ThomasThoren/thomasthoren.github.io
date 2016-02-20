@@ -19,19 +19,14 @@ for photo in $(find $PROJECT_DIRECTORY/images/tmp -type f); do
   fname=${fullfile%.*}  # filename
   fileextension="${photo##*.}"  # extension
 
-  # Small width. Limit width to 400px.
+  # Raw
   convert $photo \
-    -interlace plane \
     -quality 92 \
     -density 72 \
-    -resize '400>' \
-    -set filename:mysize \
-    "%wx%h" \
-    "$PROJECT_DIRECTORY/images/tmp/$fname-%[filename:mysize].$fileextension"
+    $photo
 
-  # Large width. Limit width to 680px.
+  # Small width. Limit width to 680px.
   convert $photo \
-    -interlace plane \
     -quality 92 \
     -density 72 \
     -resize '680>' \
@@ -39,9 +34,8 @@ for photo in $(find $PROJECT_DIRECTORY/images/tmp -type f); do
     "%wx%h" \
     "$PROJECT_DIRECTORY/images/tmp/$fname-%[filename:mysize].$fileextension"
 
-  # Large width, retina. Limit width to 1360px.
+  # Large width (retina). Limit width to 1360px.
   convert $photo \
-    -interlace plane \
     -quality 92 \
     -density 72 \
     -resize '1360>' \
