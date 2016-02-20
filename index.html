@@ -25,7 +25,7 @@ layout: default
     <div class="section-title">Side projects</div>
     {% for side_project in site.side_projects reversed %}
     <div class="clip-wrapper">
-      <div class="clip-title"><a href="{{ side_project.side_project_url }}">{{ side_project.title }}</a></div>
+      <div class="project-title"><a href="{{ side_project.side_project_url }}">{{ side_project.title }}</a></div>
       <div><a href="{{ side_project.side_project_url }}"><img class="clip-image" src="{{ side_project.image_url }}" alt="{{ side_project.image_alt }}"></a></div>
       <p class="clip-description">{{ side_project.description }}</p>
       {% if side_project.repo %}
