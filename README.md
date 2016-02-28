@@ -1,1 +1,1 @@
-[thomasthoren.com](http://thomasthoren.com)
+[https://thomasthoren.com](https://thomasthoren.com)
