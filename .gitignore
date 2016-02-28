@@ -3,6 +3,7 @@
 .ruby-version/
 .sass-cache/
 _drafts/
+js/
 misc/
 public/
 tmp/

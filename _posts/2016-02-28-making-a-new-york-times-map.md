@@ -389,7 +389,7 @@ You might notice little differences between [our map][NY Times block] and the [N
 ## Adobe Illustrator and ai2html
 
 <div class="blog-image image-right image-small">
-<img src="http://blogs.adobe.com/creativecloud/files/2014/11/Orlando_6_AiLogo.jpg" alt="Adobe Illustrator logo" />
+<img src="/images/thumbnails/ai.jpg" alt="Adobe Illustrator logo" />
 </div>
 
 For additional fine-tuning, it is easiest to use Adobe Illustrator for working with vector graphics. The New York Times has a helpful open-source project called [ai2html][ai2html] that makes it easy to export Illustrator files into HTML and PNG files, including different sizes and styels for different devices (phones, tablets, laptops, large monitors).
@@ -487,9 +487,9 @@ That's it! I hope you were able to learn a lot and will be able to apply this in
 [Simplification]: https://github.com/mbostock/topojson/wiki/Command-Line-Reference#simplification
 [SRTM]: http://www2.jpl.nasa.gov/srtm/
 [SRTM Tile Grabber]: http://dwtkns.com/srtm/
-[Stack Exchange hillshade]: http://gis.stackexchange.com/a/144700
+[Stack Exchange hillshade]: https://gis.stackexchange.com/a/144700
 [SVG Crowbar]: http://nytimes.github.io/svg-crowbar/
-[syncing raster/vector]: http://stackoverflow.com/a/14691788/2574244
+[syncing raster/vector]: https://stackoverflow.com/a/14691788/2574244
 [TopoJSON]: https://github.com/mbostock/topojson
 [Ukraine Crisis in Maps]: http://www.nytimes.com/interactive/2014/02/27/world/europe/ukraine-divisions-crimea.html
-[Why Use Make]: http://bost.ocks.org/mike/make/
+[Why Use Make]: https://bost.ocks.org/mike/make/
