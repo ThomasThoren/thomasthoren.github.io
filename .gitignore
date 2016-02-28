@@ -8,6 +8,7 @@ public/
 tmp/
 temp/
 
+images/psd/
 images/raw/
 images/thumbnails/*[0-9].png
 

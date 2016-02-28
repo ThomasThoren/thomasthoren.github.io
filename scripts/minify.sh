@@ -19,12 +19,6 @@ for photo in $(find $PROJECT_DIRECTORY/images/tmp -type f); do
   fname=${fullfile%.*}  # filename
   fileextension="${photo##*.}"  # extension
 
-  # Raw
-  convert $photo \
-    -quality 92 \
-    -density 72 \
-    $photo
-
   # Small width. Limit width to 680px.
   convert $photo \
     -quality 92 \
@@ -32,16 +26,7 @@ for photo in $(find $PROJECT_DIRECTORY/images/tmp -type f); do
     -resize '680>' \
     -set filename:mysize \
     "%wx%h" \
-    "$PROJECT_DIRECTORY/images/tmp/$fname-%[filename:mysize].$fileextension"
-
-  # Large width (retina). Limit width to 1360px.
-  convert $photo \
-    -quality 92 \
-    -density 72 \
-    -resize '1360>' \
-    -set filename:mysize \
-    "%wx%h" \
-    "$PROJECT_DIRECTORY/images/tmp/$fname-%[filename:mysize].$fileextension"
+    "$PROJECT_DIRECTORY/images/tmp/$fname.$fileextension"
 
 done
 

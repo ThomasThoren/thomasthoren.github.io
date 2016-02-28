@@ -7,7 +7,7 @@ url: https://thomasthoren.com   # The base hostname & protocol for your site
 enforce_ssl: thomasthoren.com   # without any protocol
 twitter_username: thomasjthoren
 github_username:  ThomasThoren
-highlighter: rouge
+highlighter: pygments
 markdown: kramdown
 gems:
   - jekyll-sitemap
