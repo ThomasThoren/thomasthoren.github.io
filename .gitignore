@@ -14,7 +14,6 @@ images/thumbnails/*[0-9].png
 
 .DS_Store
 Gemfile.lock
-blog.html
 resume.html
 
 *.gem
