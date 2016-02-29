@@ -397,7 +397,7 @@ For smaller artboards, be aware that font sizes will need to be increased. Text 
 
 <div class="blog-image image-center image-large">
 <img src="/images/thumbnails/illustrator-workspace.png" alt="Illustrator artboards" />
-<p class="image-description">The different artboards with the settings text block to the right. Notice how the smaller artboards include fewer labels and cities.</p>
+<p class="image-description">The different artboards with the settings text block to the left. Notice how the smaller artboards include fewer labels and cities.</p>
 </div>
 
 Here is a sample config text block:
