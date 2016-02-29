@@ -339,47 +339,27 @@ d3.json("districts.json", function(error, districts) {
 
 This same scale will then be used to scale the raster image. By using the same scale, we can be sure that the vector and raster data will align.
 
-{% highlight js hl_lines="24 25 27 28 31 32 33 34 35 36 37 38 39" %}
-d3.json("districts.json", function(error, districts) {
-  if (error) return console.warn(error);
+{% highlight js %}
+// In d3.json function
 
-  var bounds = map_path.bounds(topojson.feature(
-    districts, districts.objects["afghanistan-districts"]));
+// Scale and position shaded relief raster image.
+// This assumes it has been cropped to the vector outline shape.
+var raster_width = (bounds[1][0] - bounds[0][0]) * scale;
+var raster_height = (bounds[1][1] - bounds[0][1]) * scale;
 
-  // Calculate the pixels per map-path-degree.
-  var scale = 1 / Math.max(
-    (bounds[1][0] - bounds[0][0]) / map_width,
-    (bounds[1][1] - bounds[0][1]) / map_height);
+var rtranslate_x = (map_width - raster_width) / 2;
+var rtranslate_y = (map_height - raster_height) / 2;
 
-  // Find how to translate map into view based on the calculated scale.
-  var translation = [
-    (map_width - scale * (bounds[1][0] + bounds[0][0])) / 2,
-    (map_height - scale * (bounds[1][1] + bounds[0][1])) / 2];
-
-  // Scale and center vector using new scale and translation.
-  map_projection
-    .scale(scale)
-    .translate(translation);
-
-  // Scale and position shaded relief raster image.
-  // This assumes it has been cropped to the vector outline shape.
-  var raster_width = (bounds[1][0] - bounds[0][0]) * scale;
-  var raster_height = (bounds[1][1] - bounds[0][1]) * scale;
-
-  var rtranslate_x = (map_width - raster_width) / 2;
-  var rtranslate_y = (map_height - raster_height) / 2;
-
-  // Shaded relief
-  svg.append("image")
-      .attr("id", "Raster")
-      .attr("clip-path", "url(#afghanistan_clip)")
-      .attr("xlink:href", "afghanistan.png")
-      .attr("class", "raster")
-      .attr("width", raster_width)
-      .attr("height", raster_height)
-      .attr("transform",
-            "translate(" + rtranslate_x + ", " + rtranslate_y + ")");
-});
+// Shaded relief
+svg.append("image")
+    .attr("id", "Raster")
+    .attr("clip-path", "url(#afghanistan_clip)")
+    .attr("xlink:href", "afghanistan.png")
+    .attr("class", "raster")
+    .attr("width", raster_width)
+    .attr("height", raster_height)
+    .attr("transform",
+          "translate(" + rtranslate_x + ", " + rtranslate_y + ")");
 {% endhighlight %}
 
 The rest of the D3 code places city markers, writes city labels, draws label lines and colors certain districts.
