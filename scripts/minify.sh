@@ -23,7 +23,7 @@ for photo in $(find $PROJECT_DIRECTORY/images/tmp -type f); do
   convert $photo \
     -quality 92 \
     -density 72 \
-    -resize '680>' \
+    -resize '1300>' \
     -set filename:mysize \
     "%wx%h" \
     "$PROJECT_DIRECTORY/images/tmp/$fname.$fileextension"
