@@ -165,7 +165,7 @@ ogr2ogr \
     shp/cities.shp
 {% endhighlight %}
 
-Convert GeoJSON to TopoJSON. This reduces the file size even more while mainting its accuracy. The TopoJSON format is also usable by D3 (both of which were created by [Mike Bostock][Mike Bostock]).
+Convert GeoJSON to TopoJSON. This reduces the file size even more while maintaining its accuracy. The TopoJSON format is also usable by D3 (both of which were created by [Mike Bostock][Mike Bostock]).
 
 {% highlight bash %}
 mkdir -p topojson
@@ -380,7 +380,7 @@ This is how the New York Times appears to have created the presentation for thei
 
 Install [SVG Crowbar](SVG Crowbar) (yet another New York Times project) so you can save our SVG as a local file. Follow ai2html's installation instructions and then open your SVG file in Illustrator. You can find my final [Illustrator file here][ai file].
 
-You'll probably find that some elements are miscolored or aligned wrong, but you can fix that in Illustrator. Some of the text labels in D3 were hacked together to imitate a cohesive text block. Fix that by combinging the text into a single entity.
+You'll probably find that some elements are miscolored or aligned wrong, but you can fix that in Illustrator. Some of the text labels in D3 were hacked together to imitate a cohesive text block. Fix that by combining the text into a single entity.
 
 <div class="blog-image image-right image-small">
 <img src="/images/thumbnails/illustrator-artboards.png" alt="Illustrator artboards" />
