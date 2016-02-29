@@ -9,6 +9,7 @@
 
 .site-title {
   font-size: 36px;
+  line-height: 54px;
 
   &,
   &:visited {
@@ -17,14 +18,13 @@
 }
 
 .site-nav {
-  float: right;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 54px;  // 30px;
 
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
-    vertical-align: bottom;
+    // vertical-align: bottom;
 
     // Gaps between nav items, but not on the first one
     &:not(:first-child) {
@@ -211,6 +211,7 @@
 .section-title {
   font-size: 1.5em;
   border-bottom: 1px solid #CCC;
+  margin-bottom: 15px;
   // font-family: $secondary-font-family;
 }
 
@@ -219,7 +220,7 @@
  * Clips
  */
 .clip-wrapper {
-  padding: 15px 0 10px 0;
+  padding: 0 0 10px 0;
 }
 .education-wrapper {
   padding: 10px 0 0 0;
@@ -383,11 +384,22 @@
 .no-pad-left { padding-left: 0; }
 .no-pad-right { padding-right: 0; }
 
+.no-padding { padding: 0; }
+
+.text-right { text-align: right; }
 
 /*
  * Mobile width
  */
 @media screen and (max-width: 600px) {
+  .medium-text-right {
+    text-align: left;
+  }
+
+  .site-nav {
+    font-size: 16px;
+    line-height: 36px;
+  }
 }
 
 
@@ -395,6 +407,7 @@
  * Medium width
  */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+  .medium-text-right { text-align: right; }
 }
 
 
@@ -402,5 +415,6 @@
  * Large width
  */
 @media screen and (min-width: 1025px) {
+  .medium-text-right { text-align: right; }
 }
 
