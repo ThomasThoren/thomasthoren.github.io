@@ -1,6 +1,6 @@
 # Site settings
 title: Thomas Thoren
-description: "Journalist at The Lens in New Orleans, working as a reporter, developer and designer."
+description: "Journalist working with data and design."
 email: thomasjthoren@gmail.com
 baseurl: ""  # The subpath of your site, e.g. /blog/
 url: https://thomasthoren.com   # The base hostname & protocol for your site
@@ -12,6 +12,7 @@ markdown: kramdown
 gems:
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-seo-tag
 collections:
   - clips
   - side_projects
@@ -26,3 +27,7 @@ defaults:
       type: "posts"
     values:
       comments: "true"
+# Extra tags for jekyll-seo-tag:
+author: thomasjthoren
+twitter:
+  username: thomasjthoren
