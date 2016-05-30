@@ -2,6 +2,7 @@
 title: Thomas Thoren
 description: "Journalist working with data and design."
 email: thomasjthoren@gmail.com
+cell: (504) 312-1505
 baseurl: ""  # The subpath of your site, e.g. /blog/
 url: https://thomasthoren.com   # The base hostname & protocol for your site
 enforce_ssl: thomasthoren.com   # without any protocol
