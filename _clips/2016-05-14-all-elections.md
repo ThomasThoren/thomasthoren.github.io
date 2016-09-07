@@ -1,7 +1,7 @@
 ---
 title: Live election results
 string_date: ""
-clip_url: //elections.thelensnola.org/
+clip_url: http://elections.thelensnola.org/
 image_url: /images/thumbnails/2016-03-05-presidential-primary.png
 image_alt: March 5, 2016, Louisiana presidential primary
 deferred_image: false
