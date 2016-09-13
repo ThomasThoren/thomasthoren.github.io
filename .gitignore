@@ -17,7 +17,10 @@ images/thumbnails/*[0-9].png
 Gemfile.lock
 resume.html
 
+*.ai
 *.gem
 *.log
+*.psd
 *.pyc
 *.sql
+*.txt

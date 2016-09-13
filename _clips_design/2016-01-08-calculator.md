@@ -5,7 +5,7 @@ clip_url: http://thelensnola.org/2016/01/08/use-our-tax-calculator-to-determine-
 image_url: /images/thumbnails/2016-01-08-calculator.png
 image_alt: Property tax calculator
 deferred_image: false
-description: An interactive way for readers to see how a proposed tax increase would affect their tax bills.
 repo: //github.com/TheLens/calculators/tree/master/2016-police-fire-millage
 tools: JavaScript
 ---
+An interactive way for readers to see how a proposed tax increase would affect their tax bills.

@@ -4,18 +4,22 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: 'Droid Serif', serif;
+$base-font-family: 'Droid Serif', serif;  // Body text
 $base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size:  $base-font-size * 0.85;
+$large-font-size:  $base-font-size * 1.15;
 $base-line-height: 1.5;
 
-$secondary-font-family: Helvetica, Arial, sans-serif;
+$title-font-family:     'Rubik One', sans-serif;  // Title
+$secondary-serif:       'Neuton', serif;  // Intro text
+$secondary-font-family: 'Roboto', Helvetica, Arial, sans-serif;  // Dates
 
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$background:       linear-gradient(#555351 0%, #CC9D7A 100%);
+$background-color: #FDFDFD;
+$brand-color:      #B8860B;  // darkgoldenrod
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -24,13 +28,6 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;

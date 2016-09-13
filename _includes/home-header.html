@@ -1,0 +1,38 @@
+<header class="site-header-big">
+  <div class="wrapper">
+    <div class="row">
+
+      <div class="small-12 medium-8 columns site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </div>
+
+      <div class="small-12 medium-4 columns no-padding medium-text-right">
+        <nav class="site-nav">
+          <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+          <a class="page-link" href="/blog">Blog</a>
+          <a class="page-link" href="/#clips">Clips</a>
+        </nav>
+      </div>
+    </div>
+
+    <p class="intro-text">
+      {{ site.long_description }}
+    </p>
+
+    <div class="row top-contact-info">
+      <div class="top-contact small-12 medium-6 columns no-pad-left">{{ site.cell }}</div>
+      <div class="top-contact medium-text-left small-12 medium-6 columns no-pad-left">{{ site.email }}</div>
+
+      <div class="top-contact medium-text-left small-12 medium-6 columns no-pad-left no-pad-right">
+        <a href="https://twitter.com/{{ site.twitter_username }}">
+          <i class="fa fa-twitter"></i> {{ site.twitter_username }}
+        </a>
+      </div>
+      <div class="top-contact medium-text-left small-12 medium-6 columns no-pad-left no-pad-right">
+        <a href="https://github.com/{{ site.github_username }}">
+          <i class="fa fa-github"></i> {{ site.github_username }}
+        </a>
+      </div>
+    </div>
+
+  </div>
+</header>

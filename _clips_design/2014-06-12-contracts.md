@@ -5,7 +5,7 @@ clip_url: //vault.thelensnola.org/contracts/
 image_url: /images/thumbnails/2014-06-12-contracts.png
 image_alt: Government contracts tracker
 deferred_image: true
-description: A web scraper that grabs all of the City of New Orleans' new contracts and stores them in a fully searchable archive.
 repo: //github.com/TheLens/contracts
-tools: DocumentCloud, Flask, JavaScript, PostgreSQL, Python, S3, SQL Alchemy, web scraping
+tools: DocumentCloud, Flask, JavaScript, PostgreSQL, Python, S3, SQLAlchemy, web scraping
 ---
+A daily web scraper that downloads all of the City of New Orleans' new contracts and stores them in a fully searchable archive.

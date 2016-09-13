@@ -1,33 +1,98 @@
 ---
-layout: default
+layout: homepage
 ---
 <div class="home">
-  <div class="intro-text">
-    Journalist at <a href="http://thelensnola.org">The Lens</a> in New Orleans, where I work as a reporter, developer and designer.
+
+  <div class="sections">
+    <div class="row">
+      <div class="columns small-12 sections-title" id="clips">Clips</div>
+    </div>
+
+    <div class="row">
+      <div class="columns small-12 text-center">
+        <div class="clip-section">
+          <i class="fa fa-pencil fixed-font-width"></i> <a href="#writing">Writing</a>
+        </div>
+        <div class="clip-section">
+          <i class="fa fa-keyboard-o fixed-font-width"></i> <a href="#design-and-development">Design/development</a>
+        </div>
+        <div class="clip-section">
+          <i class="fa fa-wrench fixed-font-width"></i> <a href="#side-projects">Side projects</a>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="section" id="clips">
-    <div class="section-title">Clips</div>
-    {% for clip in site.clips reversed %}
+  <div class="section writing" id="writing">
+    <div class="section-title">Writing</div>
+    {% for clip in site.clips_written reversed %}
     <div class="clip-wrapper">
-      <div class="clip-title"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div><div class="clip-date">{{ clip.string_date }}</div>
-      <div><a href="{{ clip.clip_url }}"><img class="clip-image" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a></div>
-      <p class="clip-description">{{ clip.description }}</p>
-      {% if clip.repo %}
-        <div class="clip-repo"><a href="{{ clip.repo }}">Source code</a></div>
+      <div class="writing-date">{{ clip.string_date }}</div>
+      <div class="writing-title"><a href="{{ clip.clip_url }}">{{ clip.title }} ({{ clip.publication }})</a></div>
+
+      <div>
+        <a href="{{ clip.clip_url }}"><img class="clip-image" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
+      </div>
+
+      {% if clip.excerpt %}
+        {{ clip.excerpt }}
       {% endif %}
-      <div class="clip-tools">Tools: {{ clip.tools }}</div>
+
+      {% if clip.series %}
+        <div class="clip-series">
+          Other stories in this series:
+          <ul>
+          {% for part in clip.series %}
+            <li>
+              <a href="{{ part.url }}">{{ part.title }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
     </div>
     {% endfor %}
   </div>
 
-  <div class="section" id="side-projects">
+  <div class="section design-and-development" id="design-and-development">
+    <div class="section-title">Design and development</div>
+
+    {% for clip in site.clips_design reversed %}
+    <div class="clip-wrapper">
+      <div class="design-title"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div><div class="design-date inline">{{ clip.string_date }}</div>
+
+      <div>
+        <a href="{{ clip.clip_url }}"><img class="clip-image" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
+      </div>
+
+      {% if clip.excerpt %}
+        {{ clip.excerpt }}
+      {% endif %}
+
+      {% if clip.repo %}
+        <div class="clip-repo"><a href="{{ clip.repo }}">Source code</a></div>
+      {% endif %}
+
+      {% if clip.tools %}
+        <div class="clip-tools">Tools: {{ clip.tools }}</div>
+      {% endif %}
+
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="section side-projects" id="side-projects">
     <div class="section-title">Side projects</div>
     {% for side_project in site.side_projects %}
     <div class="clip-wrapper">
       <div class="project-title"><a href="{{ side_project.side_project_url }}">{{ side_project.title }}</a></div>
       <div><a href="{{ side_project.side_project_url }}"><img class="clip-image" src="{{ side_project.image_url }}" alt="{{ side_project.image_alt }}"></a></div>
-      <p class="clip-description">{{ side_project.description }}</p>
+
+      {% if side_project.excerpt %}
+        {{ side_project.excerpt }}
+      {% endif %}
+
       {% if side_project.repo %}
         <div class="clip-repo"><a href="{{ side_project.repo }}">Source code</a></div>
       {% endif %}
@@ -36,15 +101,4 @@ layout: default
     {% endfor %}
   </div>
 
-  <div class="section" id="education">
-    <div class="section-title">Education</div>
-    <div class="education-wrapper">
-      <div class="education-title">M.S., news-editorial journalism</div><div class="education-date">2013</div>
-      <div class="education-institution">University of Illinois</div>
-    </div>
-    <div class="education-wrapper">
-      <div class="education-title">B.S., structural engineering</div><div class="education-date">2012</div>
-      <div class="education-institution">University of Illinois</div>
-    </div>
-  </div>
 </div>

@@ -1,8 +1,9 @@
 # Site settings
 title: Thomas Thoren
-description: "Journalist working with data and design."
+description: "Independent journalist in Austin, Texas."
+long_description: "Independent journalist living in Austin, Texas. Previously, a reporter and developer at The Lens. Working with data, documents and design."
 email: thomasjthoren@gmail.com
-cell: (504) 312-1505
+cell: 504-312-1505
 baseurl: ""  # The subpath of your site, e.g. /blog/
 url: https://thomasthoren.com   # The base hostname & protocol for your site
 enforce_ssl: thomasthoren.com   # without any protocol
@@ -15,7 +16,8 @@ gems:
   - jekyll-gist
   - jekyll-seo-tag
 collections:
-  - clips
+  - clips_design
+  - clips_written
   - side_projects
 destination:  ./public
 sass:
