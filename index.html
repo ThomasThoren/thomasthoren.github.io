@@ -19,6 +19,9 @@ layout: homepage
         <div class="clip-section">
           <i class="fa fa-wrench fixed-font-width"></i> <a href="#side-projects">Side projects</a>
         </div>
+        <div class="clip-section">
+          <i class="fa fa-group fixed-font-width"></i> <a href="#talks">Talks</a>
+        </div>
       </div>
     </div>
   </div>
@@ -60,7 +63,7 @@ layout: homepage
 
     {% for clip in site.clips_design reversed %}
     <div class="clip-wrapper">
-      <div class="design-title"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div><div class="design-date inline">{{ clip.string_date }}</div>
+      <div class="design-title inline"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div><div class="design-date inline">{{ clip.string_date }}</div>
 
       <div>
         <a href="{{ clip.clip_url }}"><img class="clip-image" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
@@ -97,6 +100,28 @@ layout: homepage
         <div class="clip-repo"><a href="{{ side_project.repo }}">Source code</a></div>
       {% endif %}
       <div class="clip-tools">Tools: {{ side_project.tools }}</div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="section talks" id="talks">
+    <div class="section-title">Talks</div>
+    {% for talk in site.talks reversed %}
+    <div class="clip-wrapper">
+    <div class="talk-title inline"><a href="{{ talk.talk_url }}">{{ talk.title }} ({{ talk.conference_abbr }})</a></div><div class="talk-date inline">{{ talk.talk_date | date: "%Y" }}</div>
+
+      {% if talk.excerpt %}
+        {{ talk.excerpt }}
+      {% endif %}
+
+      {% if talk.slides_url %}
+        <div class="talk-resource"><a href="{{ talk.slides_url }}">Slides</a></div>
+      {% endif %}
+
+      {% if talk.tipsheet_url %}
+        <div class="talk-resource"><a href="{{ talk.tipsheet_url }}">Tipsheet</a></div>
+      {% endif %}
+
     </div>
     {% endfor %}
   </div>

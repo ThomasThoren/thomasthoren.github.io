@@ -19,6 +19,7 @@ collections:
   - clips_design
   - clips_written
   - side_projects
+  - talks
 destination:  ./public
 sass:
   sass_dir: _sass

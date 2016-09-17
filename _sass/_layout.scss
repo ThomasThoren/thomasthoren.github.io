@@ -271,14 +271,14 @@ a.top-contact {
   padding: 0 0 20px 0;
 }
 
-.design-title,
 .inline {
   display: inline-block;
 }
 .clip-title,
 .writing-title,
 .design-title,
-.project-title {
+.project-title,
+.talk-title {
   font-size: 1.2em;
 
   & a {
@@ -288,12 +288,19 @@ a.top-contact {
     text-decoration: underline;
   }
 }
-.writing-title { width: 100%; }
-.design-title { width: 67%; }
-.project-title { width: 100%; }
+.writing-title,
+.project-title {
+  width: 100%;
+}
+
+.design-title {
+  width: 67%;
+}
+.talk-title { width: 90%; }
 
 .writing-date,
-.design-date {
+.design-date,
+.talk-date {
   font-size: $small-font-size;
   font-family: $secondary-font-family;
   color: gray;
@@ -301,7 +308,9 @@ a.top-contact {
   padding-top: 15px;
 }
 .writing-date { width: 100%; }
+
 .design-date { width: 33%; }
+.talk-date { width: 10%; }
 
 .clip-image {
   width: auto;
@@ -323,6 +332,7 @@ a.top-contact {
 .clip-repo {
   margin-bottom: 15px;
 }
+// .talk-resource { margin-bottom: 10px; }
 
 /*
  * Resume
