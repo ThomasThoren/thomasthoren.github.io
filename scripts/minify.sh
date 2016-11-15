@@ -1,20 +1,20 @@
 #!/bin/bash
 
 if [ -z $VIRTUAL_ENV ]; then
-  echo Not in virtual environment. Stopping.
+  echo "Not in virtual environment. Stopping."
   exit 1
 fi
 
-mkdir -p $PROJECT_DIRECTORY/images/thumbnails
+mkdir -p images/thumbnails
 
 # Copy raw images to temporary directory
-rm -rf $PROJECT_DIRECTORY/images/tmp/
-mkdir -p $PROJECT_DIRECTORY/images/tmp/
-cp $PROJECT_DIRECTORY/images/raw/* \
-   $PROJECT_DIRECTORY/images/tmp
+rm -rf images/tmp/
+mkdir -p images/tmp/
+cp images/raw/* \
+   images/tmp
 
 # Scale down if possible. Max width is 678px.
-for photo in $(find $PROJECT_DIRECTORY/images/tmp -type f); do
+for photo in $(find images/tmp -type f); do
   fullfile=$(basename "$photo")  # filename.extension
   fname=${fullfile%.*}  # filename
   fileextension="${photo##*.}"  # extension
@@ -26,16 +26,16 @@ for photo in $(find $PROJECT_DIRECTORY/images/tmp -type f); do
     -resize '1300>' \
     -set filename:mysize \
     "%wx%h" \
-    "$PROJECT_DIRECTORY/images/tmp/$fname.$fileextension"
+    "images/tmp/$fname.$fileextension"
 
 done
 
 # Resample images.
-imageoptim --directory $PROJECT_DIRECTORY/images/tmp/
+imageoptim --directory images/tmp/
 
 # Copy into thumbnails directory.
-cp $PROJECT_DIRECTORY/images/tmp/* \
-   $PROJECT_DIRECTORY/images/thumbnails
+cp images/tmp/* \
+   images/thumbnails
 
 # Clean up.
-rm -rf $PROJECT_DIRECTORY/images/tmp
+rm -rf images/tmp

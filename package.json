@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "[https://thomasthoren.com](https://thomasthoren.com)",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasThoren/thomasthoren.github.io.git"
+  },
+  "keywords": [],
+  "author": "Thomas Thoren",
+  "license": "Unlicensed",
+  "bugs": {
+    "url": "https://github.com/ThomasThoren/thomasthoren.github.io/issues"
+  },
+  "homepage": "https://thomasthoren.com",
+  "dependencies": {
+    "imageoptim-cli": "^1.14.8"
+  }
+}
