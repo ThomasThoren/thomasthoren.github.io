@@ -1,7 +1,7 @@
 # Site settings
 title: Thomas Thoren
 description: "Independent journalist in Austin, Texas."
-long_description: "Independent journalist living in Austin, Texas. Previously, a reporter and developer at The Lens. Working with data, documents and design."
+long_description: "Independent journalist and adjunct lecturer in Austin, Texas. Previously, a reporter and developer at The Lens. Working with data, documents and design."
 email: thomasjthoren@gmail.com
 cell: 504-312-1505
 baseurl: ""  # The subpath of your site, e.g. /blog/
