@@ -4,17 +4,17 @@ layout: homepage
 <div class="home">
 
   <div class="sections">
-    <div class="row">
+    <!-- <div class="row">
       <div class="columns small-12 sections-title" id="clips">Clips</div>
-    </div>
+    </div> -->
 
     <div class="row">
       <div class="columns small-12 text-center">
         <div class="clip-section">
-          <i class="fa fa-pencil fixed-font-width"></i> <a href="#writing">Writing</a>
+          <i class="fa fa-keyboard-o fixed-font-width"></i> <a href="#design-and-development">Design/development</a>
         </div>
         <div class="clip-section">
-          <i class="fa fa-keyboard-o fixed-font-width"></i> <a href="#design-and-development">Design/development</a>
+          <i class="fa fa-pencil fixed-font-width"></i> <a href="#reporting">Reporting</a>
         </div>
         <div class="clip-section">
           <i class="fa fa-wrench fixed-font-width"></i> <a href="#side-projects">Side projects</a>
@@ -24,38 +24,6 @@ layout: homepage
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="section writing" id="writing">
-    <div class="section-title">Writing</div>
-    {% for clip in site.clips_written reversed %}
-    <div class="clip-wrapper">
-      <div class="writing-date">{{ clip.string_date }}</div>
-      <div class="writing-title"><a href="{{ clip.clip_url }}">{{ clip.title }} ({{ clip.publication }})</a></div>
-
-      <div>
-        <a href="{{ clip.clip_url }}"><img class="clip-image" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
-      </div>
-
-      {% if clip.excerpt %}
-        {{ clip.excerpt }}
-      {% endif %}
-
-      {% if clip.series %}
-        <div class="clip-series">
-          Other stories in this series:
-          <ul>
-          {% for part in clip.series %}
-            <li>
-              <a href="{{ part.url }}">{{ part.title }}</a>
-            </li>
-          {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
-
-    </div>
-    {% endfor %}
   </div>
 
   <div class="section design-and-development" id="design-and-development">
@@ -79,6 +47,38 @@ layout: homepage
 
       {% if clip.tools %}
         <div class="clip-tools">Tools: {{ clip.tools }}</div>
+      {% endif %}
+
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="section reporting" id="reporting">
+    <div class="section-title">Reporting</div>
+    {% for clip in site.clips_written reversed %}
+    <div class="clip-wrapper">
+      <div class="reporting-date">{{ clip.string_date }}</div>
+      <div class="reporting-title"><a href="{{ clip.clip_url }}">{{ clip.title }} ({{ clip.publication }})</a></div>
+
+      <div>
+        <a href="{{ clip.clip_url }}"><img class="clip-image" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
+      </div>
+
+      {% if clip.excerpt %}
+        {{ clip.excerpt }}
+      {% endif %}
+
+      {% if clip.series %}
+        <div class="clip-series">
+          Other stories in this series:
+          <ul>
+          {% for part in clip.series %}
+            <li>
+              <a href="{{ part.url }}">{{ part.title }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+        </div>
       {% endif %}
 
     </div>

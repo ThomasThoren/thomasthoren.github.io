@@ -1,5 +1,5 @@
 ---
-title: Geographic data library
+title: Louisiana geographic data
 side_project_url: //github.com/TheLens/geographic-data
 image_url: /images/thumbnails/geographic-data.png
 image_alt: Geographic data

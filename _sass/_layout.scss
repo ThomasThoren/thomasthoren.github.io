@@ -275,7 +275,7 @@ a.top-contact {
   display: inline-block;
 }
 .clip-title,
-.writing-title,
+.reporting-title,
 .design-title,
 .project-title,
 .talk-title {
@@ -288,7 +288,7 @@ a.top-contact {
     text-decoration: underline;
   }
 }
-.writing-title,
+.reporting-title,
 .project-title {
   width: 100%;
 }
@@ -298,7 +298,7 @@ a.top-contact {
 }
 .talk-title { width: 90%; }
 
-.writing-date,
+.reporting-date,
 .design-date,
 .talk-date {
   font-size: $small-font-size;
@@ -307,7 +307,7 @@ a.top-contact {
   text-align: right;
   padding-top: 15px;
 }
-.writing-date { width: 100%; }
+.reporting-date { width: 100%; }
 
 .design-date { width: 33%; }
 .talk-date { width: 10%; }
