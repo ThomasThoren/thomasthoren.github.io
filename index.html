@@ -4,10 +4,6 @@ layout: homepage
 <div class="home">
 
   <div class="sections">
-    <!-- <div class="row">
-      <div class="columns small-12 sections-title" id="clips">Clips</div>
-    </div> -->
-
     <div class="row">
       <div class="columns small-12 text-center">
         <div class="clip-section">
@@ -31,7 +27,7 @@ layout: homepage
 
     {% for clip in site.clips_design reversed %}
     <div class="clip-wrapper">
-      <div class="design-title inline"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div><div class="design-date inline">{{ clip.string_date }}</div>
+      <div class="design-title inline"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div>
 
       <div>
         <a href="{{ clip.clip_url }}"><img class="clip-image" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
@@ -57,8 +53,7 @@ layout: homepage
     <div class="section-title">Reporting</div>
     {% for clip in site.clips_written reversed %}
     <div class="clip-wrapper">
-      <div class="reporting-date">{{ clip.string_date }}</div>
-      <div class="reporting-title"><a href="{{ clip.clip_url }}">{{ clip.title }} ({{ clip.publication }})</a></div>
+      <div class="reporting-title"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div>
 
       <div>
         <a href="{{ clip.clip_url }}"><img class="clip-image" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
@@ -108,18 +103,21 @@ layout: homepage
     <div class="section-title">Talks</div>
     {% for talk in site.talks reversed %}
     <div class="clip-wrapper">
-    <div class="talk-title inline"><a href="{{ talk.talk_url }}">{{ talk.title }} ({{ talk.conference_abbr }})</a></div><div class="talk-date inline">{{ talk.talk_date | date: "%Y" }}</div>
+    <div class="talk-title inline"><a href="{{ talk.talk_url }}">{{ talk.title }} ({{ talk.conference_abbr }})</a></div>
 
       {% if talk.excerpt %}
         {{ talk.excerpt }}
       {% endif %}
 
-      {% if talk.slides_url %}
-        <div class="talk-resource"><a href="{{ talk.slides_url }}">Slides</a></div>
-      {% endif %}
-
-      {% if talk.tipsheet_url %}
-        <div class="talk-resource"><a href="{{ talk.tipsheet_url }}">Tipsheet</a></div>
+      {% if talk.slides_url or talk.tipsheet_url %}
+        <ul class="talk-resource">
+          {% if talk.slides_url %}
+            <li><a href="{{ talk.slides_url }}">Slides</a></li>
+          {% endif %}
+          {% if talk.tipsheet_url %}
+            <li><a href="{{ talk.tipsheet_url }}">Tipsheet</a></li>
+          {% endif %}
+        </ul>
       {% endif %}
 
     </div>
