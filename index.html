@@ -55,10 +55,6 @@ layout: homepage
     <div class="clip-wrapper">
       <div class="reporting-title"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div>
 
-      <div>
-        <a href="{{ clip.clip_url }}"><img class="clip-image" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
-      </div>
-
       {% if clip.excerpt %}
         {{ clip.excerpt }}
       {% endif %}
