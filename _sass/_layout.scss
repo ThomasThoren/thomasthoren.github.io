@@ -41,6 +41,11 @@
   font-size: 1.5em;
   color: white;
   padding: 2em 0 2em 0;
+
+  & a {
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 .site-nav {

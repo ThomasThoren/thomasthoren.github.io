@@ -13,28 +13,23 @@
       </div>
     </div>
 
-    <p class="intro-text">
-      {{ site.long_description }}
-    </p>
+    <div class="intro-text">
+      <p>{{ site.description }}</p>
+      <p>{{ site.current_job }}</p>
+    </div>
 
     <div class="row top-contact-info">
       <div class="top-contact medium-text-left small-12 medium-6 columns no-pad-left">{{ site.email }}</div>
 
       <div class="top-contact medium-text-left small-12 medium-6 columns no-pad-left">
-        <a href="https://twitter.com/{{ site.twitter_username }}">
-          <i class="fa fa-twitter"></i> {{ site.twitter_username }}
-        </a>
+        <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i> Twitter</a>
       </div>
       <div class="top-contact medium-text-left small-12 medium-6 columns no-pad-left">
-        <a href="https://github.com/{{ site.github_username }}">
-          <i class="fa fa-github"></i> {{ site.github_username }}
-        </a>
+        <a href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i> GitHub</a>
       </div>
 
       <div class="top-contact small-text-left small-12 medium-6 columns no-pad-left">
-        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-          <i class="fa fa-linkedin"></i> LinkedIn
-        </a>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="fa fa-linkedin"></i> LinkedIn</a>
       </div>
     </div>
 

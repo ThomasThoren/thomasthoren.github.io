@@ -1,7 +1,7 @@
 # Site settings
 title: Thomas Thoren
-description: "Independent journalist in Austin, Texas."
-long_description: "Journalist, developer, designer and lecturer in Austin, Texas."
+description: "Programmer, designer, and journalist in Austin, Texas."
+current_job: "Currently working as a senior software engineer at <a href='https://www.q2ebanking.com/'>Q2eBanking</a>."
 email: thomasjthoren@gmail.com
 baseurl: ""  # The subpath of your site, e.g. /blog/
 url: https://thomasthoren.com   # The base hostname & protocol for your site
@@ -11,7 +11,7 @@ github_username:  ThomasThoren
 linkedin_username: thomasjthoren
 highlighter: rouge
 markdown: kramdown
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-seo-tag
