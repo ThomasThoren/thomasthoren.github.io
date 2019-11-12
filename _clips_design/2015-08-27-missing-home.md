@@ -1,7 +1,7 @@
 ---
 title: "Missing Home"
 string_date: "Aug. 27, 2015"
-clip_url: http://projects.thelensnola.org/demolitions/
+clip_url: http://projects.thelensnola.org/demolitions/index.html
 image_url: /images/thumbnails/2015-08-27-missing-home.png
 image_alt: Missing Home
 deferred_image: true
