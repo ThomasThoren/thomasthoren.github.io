@@ -27,7 +27,7 @@ layout: homepage
 
     {% for clip in site.clips_design reversed %}
     <div class="clip-wrapper">
-      <div class="design-title inline"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div>
+      <div class="design-title inline">{% if clip.clip_url %}<a href="{{ clip.clip_url }}">{{ clip.title }}</a>{% else %}{{ clip.title }}{% endif %}</div>
 
       <div>
         <a href="{{ clip.clip_url }}"><img class="clip-image" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
