@@ -31,7 +31,7 @@ layout: homepage
 
       {% if clip.image_url %}
       <div>
-        <a href="{{ clip.clip_url }}"><img class="clip-image" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
+        <a href="{{ clip.clip_url }}"><img class="clip-image{% if clip.image_border %} clip-image-border{% endif %}" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
       </div>
       {% endif %}
 

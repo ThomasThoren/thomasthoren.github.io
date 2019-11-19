@@ -8,4 +8,6 @@ deferred_image: true
 repo: //github.com/TheLens/demolitions
 tools: AWS S3, JavaScript, Jinja, Leaflet, Make, Mapbox, Python
 ---
-This project combined text, photos and interactive design to present the stories of planned and unexpected demolitions in New Orleans following Hurricane Katrina. The project drew on FEMA databases, archived photos and on-the-ground reporting.
+This project combined text, photos and interactive design to present the stories of
+planned and unexpected demolitions in New Orleans following Hurricane Katrina.
+The project drew on FEMA databases, archived photos and on-the-ground reporting.
