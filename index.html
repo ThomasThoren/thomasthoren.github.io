@@ -122,4 +122,24 @@ layout: homepage
     {% endfor %}
   </div>
 
+  <div class="section awards" id="awards">
+    <div class="section-title">Awards</div>
+    {% for award in site.awards %}
+    <div class="clip-wrapper">
+    <div class="award-title inline">
+      {% if award.award_url %}
+        <a href="{{ award.award_url }}">{{ award.title }}</a>
+      {% else %}
+        {{ award.title }}
+      {% endif %}
+    </div>
+
+      {% if award.excerpt %}
+        {{ award.excerpt }}
+      {% endif %}
+
+    </div>
+    {% endfor %}
+  </div>
+
 </div>

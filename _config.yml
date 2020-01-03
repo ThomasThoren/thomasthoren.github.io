@@ -20,6 +20,7 @@ collections:
   - clips_written
   - side_projects
   - talks
+  - awards
 destination:  ./public
 sass:
   sass_dir: _sass
