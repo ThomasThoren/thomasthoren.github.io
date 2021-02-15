@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+
+"features": [
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Balkh", "SCALERANK": 7, "LABELRANK": 5, "NATSCALE": 20 }, "geometry": { "type": "Point", "coordinates": [ 66.899730182772373, 36.75011985172597 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Meymaneh", "SCALERANK": 7, "LABELRANK": 5, "NATSCALE": 20 }, "geometry": { "type": "Point", "coordinates": [ 64.770092731591774, 35.930221576983115 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Andkhvoy", "SCALERANK": 7, "LABELRANK": 5, "NATSCALE": 20 }, "geometry": { "type": "Point", "coordinates": [ 65.101493691879625, 36.931659158367324 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Qalat", "SCALERANK": 7, "LABELRANK": 5, "NATSCALE": 20 }, "geometry": { "type": "Point", "coordinates": [ 66.886759398267088, 32.112263406394788 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Ghazni", "SCALERANK": 7, "LABELRANK": 5, "NATSCALE": 20 }, "geometry": { "type": "Point", "coordinates": [ 68.417828734210616, 33.563311786934491 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Feyzabad", "SCALERANK": 7, "LABELRANK": 5, "NATSCALE": 20 }, "geometry": { "type": "Point", "coordinates": [ 70.579247191250545, 37.129760761558202 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Kondoz", "SCALERANK": 7, "LABELRANK": 5, "NATSCALE": 20 }, "geometry": { "type": "Point", "coordinates": [ 68.872529661946942, 36.72795066227269 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Jalalabad", "SCALERANK": 7, "LABELRANK": 5, "NATSCALE": 20 }, "geometry": { "type": "Point", "coordinates": [ 70.436103473802007, 34.44152691551875 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Charikar", "SCALERANK": 7, "LABELRANK": 5, "NATSCALE": 20 }, "geometry": { "type": "Point", "coordinates": [ 69.167912148927201, 35.018261738112187 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Gardiz", "SCALERANK": 7, "LABELRANK": 5, "NATSCALE": 20 }, "geometry": { "type": "Point", "coordinates": [ 69.214627643719155, 33.600053730294121 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Bamian", "SCALERANK": 6, "LABELRANK": 5, "NATSCALE": 30 }, "geometry": { "type": "Point", "coordinates": [ 67.521035928217486, 34.821064472486455 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Baghlan", "SCALERANK": 6, "LABELRANK": 5, "NATSCALE": 30 }, "geometry": { "type": "Point", "coordinates": [ 68.699258584472148, 36.139330260252166 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Farah", "SCALERANK": 6, "LABELRANK": 5, "NATSCALE": 30 }, "geometry": { "type": "Point", "coordinates": [ 62.096819212701007, 32.391729552229378 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Herat", "SCALERANK": 4, "LABELRANK": 5, "NATSCALE": 50 }, "geometry": { "type": "Point", "coordinates": [ 62.169993040826284, 34.330009174633005 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Mazar-e Sharif", "SCALERANK": 4, "LABELRANK": 5, "NATSCALE": 50 }, "geometry": { "type": "Point", "coordinates": [ 67.100028034335594, 36.699993712402886 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Kandahar", "SCALERANK": 3, "LABELRANK": 5, "NATSCALE": 110 }, "geometry": { "type": "Point", "coordinates": [ 65.694945840319633, 31.610020160950228 ] } },
+{ "type": "Feature", "properties": { "ADM0NAME": "Afghanistan", "NAME": "Kabul", "SCALERANK": 1, "LABELRANK": 5, "NATSCALE": 300 }, "geometry": { "type": "Point", "coordinates": [ 69.181314190705052, 34.518636144900313 ] } }
+]
+}
