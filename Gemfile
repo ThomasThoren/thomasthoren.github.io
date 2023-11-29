@@ -11,3 +11,5 @@ group :test do
   gem 'html-proofer'
   gem 'fastimage'
 end
+
+gem "webrick", "~> 1.8"
