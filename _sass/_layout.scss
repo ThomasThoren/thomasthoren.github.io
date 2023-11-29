@@ -251,6 +251,10 @@ a.top-contact {
   font-size: 3em;
 }
 
+.sections {
+  text-align: center;
+}
+
 .clip-section {
   display: inline-block;
   padding-right: 15px;
@@ -455,9 +459,6 @@ a.top-contact {
 
 .small-padding-bottom { padding-bottom: 0.5em; }
 
-.fixed-font-width {
-  width: 20px;
-}
 /*
  * Mobile width
  */
@@ -473,12 +474,12 @@ a.top-contact {
     margin-bottom: 25px;
   }
 
+  .sections {
+    text-align: left;
+  }
+
   .clip-section {
     display: block;
-    text-align: left;
-    width: 70%;
-    padding: 0;
-    margin: 0 auto;
   }
   .small-site-title {
     font-size: 2em;

@@ -4,23 +4,22 @@ layout: homepage
 <div class="home">
 
   <div class="sections">
-    <div class="row">
-      <div class="columns small-12 text-center">
-        <div class="clip-section">
-          <i class="fa fa-keyboard-o fixed-font-width"></i> <a href="#design-and-development">Design/development</a>
-        </div>
-        <div class="clip-section">
-          <i class="fa fa-wrench fixed-font-width"></i> <a href="#side-projects">Side projects</a>
-        </div>
-        <div class="clip-section">
-          <i class="fa fa-group fixed-font-width"></i> <a href="#talks">Talks</a>
-        </div>
-      </div>
+    <div class="clip-section">
+      <i class="fa fa-keyboard-o"></i> <a href="#software-development">Software development</a>
+    </div>
+    <div class="clip-section">
+      <i class="fa fa-wrench"></i> <a href="#side-projects">Side projects</a>
+    </div>
+    <div class="clip-section">
+      <i class="fa fa-group"></i> <a href="#talks">Talks</a>
+    </div>
+    <div class="clip-section">
+      <i class="fa fa-trophy"></i> <a href="#awards">Awards</a>
     </div>
   </div>
 
-  <div class="section design-and-development" id="design-and-development">
-    <div class="section-title">Design and development</div>
+  <div class="section" id="software-development">
+    <div class="section-title">Software development</div>
 
     {% for clip in site.clips_design reversed %}
     <div class="clip-wrapper">
