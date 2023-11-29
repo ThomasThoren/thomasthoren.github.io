@@ -7,7 +7,7 @@ image_alt: Property sales tracker
 image_border: true
 deferred_image: true
 repo: //github.com/TheLens/realestate
-tools: Flask, JavaScript, Leaflet, PostGIS, PostgreSQL, Python, SQLAlchemy, Selenium
+tools: CSS, HTML, JavaScript, Linux, PostGIS, PostgreSQL, Python (Flask), Selenium
 ---
 A web scraper that downloads New Orleans property sales
 and a web application that makes the archive searchable and visible on a map.

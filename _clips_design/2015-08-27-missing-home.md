@@ -6,7 +6,7 @@ image_url: /images/thumbnails/2015-08-27-missing-home.png
 image_alt: Missing Home
 deferred_image: true
 repo: //github.com/TheLens/demolitions
-tools: AWS S3, JavaScript, Jinja, Leaflet, Make, Mapbox, Python
+tools: AWS, Bash, JavaScript (Mapbox), Python
 ---
 This project combined text, photos and interactive design to present the stories of
 planned and unexpected demolitions in New Orleans following Hurricane Katrina.

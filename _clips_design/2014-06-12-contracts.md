@@ -7,7 +7,7 @@ image_alt: Government contracts tracker
 image_border: true
 deferred_image: true
 repo: //github.com/TheLens/contracts
-tools: AWS S3, DocumentCloud, Flask, JavaScript, PostgreSQL, Python, SQLAlchemy, Selenium
+tools: AWS, CSS, HTML, JavaScript, Linux, PostgreSQL, Python (Flask), Selenium
 ---
 A web scraper that downloads the City of New Orleans' contracts
 and a web application that makes the archive searchable.

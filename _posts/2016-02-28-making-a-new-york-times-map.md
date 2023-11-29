@@ -2,7 +2,7 @@
 layout: post
 title: "Making a New York Times map"
 date: 2016-02-28
-description: Create maps in the style of the New York Times using D3, GDAL, Illustrator and command line tools.
+description: Create maps in the style of the New York Times using JavaScript (D3), GIS, Adobe Illustrator, and command line tools.
 ---
 
 Of the many things the New York Times does well, their way of explaining the news through maps such as [these][NYT maps] is one of the best. The maps are always informative and enlightening, and often have an artistic element as well.

@@ -5,6 +5,6 @@ clip_url: http://oklahomawatch.org/2016/11/09/how-oklahoma-voted-interactive-map
 image_url: /images/thumbnails/2016-11-09-oklahoma-watch-election-results.png
 image_alt: Oklahoma election results
 deferred_image: false
-tools: AWS S3, Bash, D3.js, GDAL/ogr2ogr, JavaScript, Make, Pandas, Python, TopoJSON
+tools: AWS, Bash, GIS, JavaScript (D3), Python (Pandas)
 ---
 Election results analysis for Oklahoma's presidential race and state questions.
