@@ -1,7 +1,6 @@
 # Site settings
 title: Thomas Thoren
-description: "Programmer, designer, and journalist in Austin, Texas."
-current_job: "Currently working as a senior software engineer at <a href='https://www.q2ebanking.com/'>Q2eBanking</a>."
+description: "Software engineer based in Chicago."
 baseurl: ""  # The subpath of your site, e.g. /blog/
 url: https://thomasthoren.com   # The base hostname & protocol for your site
 enforce_ssl: thomasthoren.com   # without any protocol
