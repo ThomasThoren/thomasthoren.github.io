@@ -433,10 +433,6 @@ Make sure breakpoints are working by adjusting the width of your page. You shoul
 
 That's it! I hope you were able to learn a lot and will be able to apply this information to your future projects. Please let me know if you found this useful and show me what you went on to create.
 
----
-
-##### Have questions? Is something not clear? Please email me at <a href="mailto:thomasjthoren@gmail.com">thomasjthoren@gmail.com</a>.
-
 [Afghanistan districts]: https://esoc.princeton.edu/files/administrative-boundaries-398-districts
 [Afghanistan link]: http://www.nytimes.com/interactive/2015/09/29/world/asia/afghanistan-taliban-maps.html
 [ai file]: https://gist.github.com/ThomasThoren/8116135710c53794c425#file-index-ai
