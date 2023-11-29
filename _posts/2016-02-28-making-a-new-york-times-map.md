@@ -292,7 +292,7 @@ python -m SimpleHTTPServer 8888
 
 Open your web browser and go to <a href="http://localhost:8888">`http://localhost:8888`</a> to see your page.
 
-I won't go over the basics of making maps in D3 and instead only focus on the unique parts of this project. If you're completely new to making maps with D3, try following some of Mike Bostock's tutorials to get started. [This guide](https://bost.ocks.org/mike/map/) is a good starting point. I have other maps on [bl.ocks.org](https://bl.ocks.org/thomasthoren) that might help too, such as [this one focusing on labels](https://bl.ocks.org/thomasthoren/7e9970f025c301e8c2f8) and [this other map](https://bl.ocks.org/thomasthoren/6a543c4d804f35a240f9) that explains how to calculate a distance scale.
+I won't go over the basics of making maps in D3 and instead only focus on the unique parts of this project. If you're completely new to making maps with D3, try following some of Mike Bostock's tutorials to get started. [This guide](https://bost.ocks.org/mike/map/) is a good starting point. I have other maps on [bl.ocks.org](https://blocks.roadtolarissa.com/thomasthoren) that might help too, such as [this one focusing on labels](https://blocks.roadtolarissa.com/thomasthoren/7e9970f025c301e8c2f8) and [this other map](https://blocks.roadtolarissa.com/thomasthoren/6a543c4d804f35a240f9) that explains how to calculate a distance scale.
 
 __Syncing raster images with vector outlines__
 
@@ -456,9 +456,9 @@ That's it! I hope you were able to learn a lot and will be able to apply this in
 [Node]: https://nodejs.org/en/
 [npm]: https://www.npmjs.com/
 [NY Times gist]: https://gist.github.com/ThomasThoren/5e676d0de41bac8a0e96
-[NY Times block]: https://bl.ocks.org/ThomasThoren/5e676d0de41bac8a0e96
+[NY Times block]: https://blocks.roadtolarissa.com/thomasthoren/5e676d0de41bac8a0e96
 [NY Times II gist]: https://gist.github.com/ThomasThoren/8116135710c53794c425
-[NY Times II block]: https://bl.ocks.org/ThomasThoren/8116135710c53794c425
+[NY Times II block]: https://blocks.roadtolarissa.com/thomasthoren/8116135710c53794c425
 [NYT maps]: http://www.nytimes.com/interactive/2014/06/12/world/middleeast/the-iraq-isis-conflict-in-maps-photos-and-video.html
 [Populated places]: http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/
 [Quantization]: https://github.com/mbostock/topojson/wiki/Command-Line-Reference#quantization

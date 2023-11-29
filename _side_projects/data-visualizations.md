@@ -1,6 +1,6 @@
 ---
 title: D3 practice on bl.ocks.org
-side_project_url: //bl.ocks.org/thomasthoren
+side_project_url: //blocks.roadtolarissa.com/thomasthoren
 image_url: /images/thumbnails/bl.ocks.org.png
 image_alt: bl.ocks.org
 tools: Adobe Illustrator, GIS, JavaScript (D3)
