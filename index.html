@@ -10,9 +10,6 @@ layout: homepage
           <i class="fa fa-keyboard-o fixed-font-width"></i> <a href="#design-and-development">Design/development</a>
         </div>
         <div class="clip-section">
-          <i class="fa fa-pencil fixed-font-width"></i> <a href="#reporting">Reporting</a>
-        </div>
-        <div class="clip-section">
           <i class="fa fa-wrench fixed-font-width"></i> <a href="#side-projects">Side projects</a>
         </div>
         <div class="clip-section">
@@ -45,33 +42,6 @@ layout: homepage
 
       {% if clip.tools %}
         <div class="clip-tools">Tools: {{ clip.tools }}</div>
-      {% endif %}
-
-    </div>
-    {% endfor %}
-  </div>
-
-  <div class="section reporting" id="reporting">
-    <div class="section-title">Reporting</div>
-    {% for clip in site.clips_written reversed %}
-    <div class="clip-wrapper">
-      <div class="reporting-title"><a href="{{ clip.clip_url }}">{{ clip.title }}</a></div>
-
-      {% if clip.excerpt %}
-        {{ clip.excerpt }}
-      {% endif %}
-
-      {% if clip.series %}
-        <div class="clip-series">
-          Other stories in this series:
-          <ul>
-          {% for part in clip.series %}
-            <li>
-              <a href="{{ part.url }}">{{ part.title }}</a>
-            </li>
-          {% endfor %}
-          </ul>
-        </div>
       {% endif %}
 
     </div>
