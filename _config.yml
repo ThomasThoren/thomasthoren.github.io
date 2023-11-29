@@ -6,7 +6,6 @@ email: thomasjthoren@gmail.com
 baseurl: ""  # The subpath of your site, e.g. /blog/
 url: https://thomasthoren.com   # The base hostname & protocol for your site
 enforce_ssl: thomasthoren.com   # without any protocol
-twitter_username: thomasjthoren
 github_username:  ThomasThoren
 linkedin_username: thomasjthoren
 highlighter: rouge
@@ -34,5 +33,3 @@ defaults:
       comments: "true"
 # Extra tags for jekyll-seo-tag:
 author: thomasjthoren
-twitter:
-  username: thomasjthoren
