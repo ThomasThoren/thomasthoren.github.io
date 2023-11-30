@@ -378,7 +378,7 @@ This is how the New York Times appears to have created the presentation for thei
 
 [This Gist][NY Times II gist] shows how we can take the SVG made with D3 and convert it to static HTML and PNG files, like how the New York Times map was done.
 
-Install [SVG Crowbar](SVG Crowbar) (yet another New York Times project) so you can save our SVG as a local file. Follow ai2html's installation instructions and then open your SVG file in Illustrator. You can find my final [Illustrator file here][ai file].
+Install [SVG Crowbar](SVGCrowbar) (yet another New York Times project) so you can save our SVG as a local file. Follow ai2html's installation instructions and then open your SVG file in Illustrator. You can find my final [Illustrator file here][ai file].
 
 You'll probably find that some elements are miscolored or aligned wrong, but you can fix that in Illustrator. Some of the text labels in D3 were hacked together to imitate a cohesive text block. Fix that by combining the text into a single entity.
 
@@ -464,7 +464,7 @@ That's it! I hope you were able to learn a lot and will be able to apply this in
 [SRTM]: http://www2.jpl.nasa.gov/srtm/
 [SRTM Tile Grabber]: http://dwtkns.com/srtm/
 [Stack Exchange hillshade]: https://gis.stackexchange.com/a/144700
-[SVG Crowbar]: http://nytimes.github.io/svg-crowbar/
+[SVGCrowbar]: http://nytimes.github.io/svg-crowbar/
 [syncing raster/vector]: https://stackoverflow.com/a/14691788/2574244
 [TopoJSON]: https://github.com/mbostock/topojson
 [Ukraine Crisis in Maps]: http://www.nytimes.com/interactive/2014/02/27/world/europe/ukraine-divisions-crimea.html
