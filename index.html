@@ -5,7 +5,7 @@ layout: homepage
 
   <div class="sections">
     <div class="clip-section">
-      <i class="fa fa-keyboard-o"></i> <a href="#software-development">Software development</a>
+      <i class="fa fa-keyboard-o"></i> <a href="#work">Work</a>
     </div>
     <div class="clip-section">
       <i class="fa fa-wrench"></i> <a href="#side-projects">Side projects</a>
@@ -18,15 +18,15 @@ layout: homepage
     </div>
   </div>
 
-  <div class="section" id="software-development">
-    <div class="section-title">Software development</div>
+  <div class="section" id="work">
+    <div class="section-title">Work</div>
 
     {% for clip in site.clips_design reversed %}
     <div class="clip-wrapper">
       <div class="design-title inline">{% if clip.clip_url %}<a href="{{ clip.clip_url }}">{{ clip.title }}</a>{% else %}{{ clip.title }}{% endif %}</div>
 
       {% if clip.image_url %}
-      <div>
+      <div class="{% if clip.padding %}clip-image-padding{% endif %}">
         <a href="{{ clip.clip_url }}"><img class="clip-image{% if clip.image_border %} clip-image-border{% endif %}" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
       </div>
       {% endif %}

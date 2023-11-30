@@ -323,7 +323,9 @@ a.top-contact {
 .clip-image-border {
   border: 1px solid gray;
 }
-
+.clip-image-padding {
+  padding: 1em 0;
+}
 .clip-image-credit {
   text-align: right;
   font-size: $small-font-size;
