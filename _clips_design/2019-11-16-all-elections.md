@@ -1,7 +1,6 @@
 ---
 title: Live election results
 string_date: ""
-clip_url: http://elections.thelensnola.org/
 image_url: /images/thumbnails/2019-11-16-statewide.png
 image_alt: Election app
 deferred_image: false

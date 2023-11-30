@@ -27,7 +27,9 @@ layout: homepage
 
       {% if clip.image_url %}
       <div class="{% if clip.padding %}clip-image-padding{% endif %}">
-        <a href="{{ clip.clip_url }}"><img class="clip-image{% if clip.image_border %} clip-image-border{% endif %}" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}"></a>
+        {% if clip.clip_url %}<a href="{{ clip.clip_url }}">{% endif %}
+          <img class="clip-image{% if clip.image_border %} clip-image-border{% endif %}" {% if clip.deferred_image == true %}src="" data-src="{{ clip.image_url }}"{% else %}src="{{ clip.image_url }}"{% endif %} alt="{{ clip.image_alt }}">
+        {% if clip.clip_url %}</a>{% endif %}
       </div>
       {% endif %}
 
@@ -70,21 +72,18 @@ layout: homepage
     <div class="section-title">Talks</div>
     {% for talk in site.talks reversed %}
     <div class="clip-wrapper">
-    <div class="talk-title inline"><a href="{{ talk.talk_url }}">{{ talk.title }} ({{ talk.conference_abbr }})</a></div>
+    <div class="talk-title inline">
+      {% if talk.talk_url %}
+      <a href="{{ talk.talk_url }}">
+      {% endif %}
+        {{ talk.title }} ({{ talk.conference_abbr }})
+      {% if talk.talk_url %}
+      </a>
+      {% endif %}
+    </div>
 
       {% if talk.excerpt %}
         {{ talk.excerpt }}
-      {% endif %}
-
-      {% if talk.slides_url or talk.tipsheet_url %}
-        <ul class="talk-resource">
-          {% if talk.slides_url %}
-            <li><a href="{{ talk.slides_url }}">Slides</a></li>
-          {% endif %}
-          {% if talk.tipsheet_url %}
-            <li><a href="{{ talk.tipsheet_url }}">Tipsheet</a></li>
-          {% endif %}
-        </ul>
       {% endif %}
 
     </div>
