@@ -87,7 +87,7 @@ layout: homepage
 
   <div class="section awards" id="awards">
     <div class="section-title">Awards</div>
-    {% for award in site.awards %}
+    {% for award in site.awards reversed %}
     <div class="clip-wrapper">
     <div class="award-title inline">
       {% if award.award_url %}
