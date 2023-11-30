@@ -37,10 +37,6 @@ layout: homepage
         {{ clip.excerpt }}
       {% endif %}
 
-      {% if clip.repo %}
-        <div class="clip-repo"><a href="{{ clip.repo }}">Source code</a></div>
-      {% endif %}
-
       {% if clip.tools %}
         <div class="clip-tools">Tools: {{ clip.tools }}</div>
       {% endif %}
@@ -60,9 +56,6 @@ layout: homepage
         {{ side_project.excerpt }}
       {% endif %}
 
-      {% if side_project.repo %}
-        <div class="clip-repo"><a href="{{ side_project.repo }}">Source code</a></div>
-      {% endif %}
       <div class="clip-tools">Tools: {{ side_project.tools }}</div>
     </div>
     {% endfor %}
