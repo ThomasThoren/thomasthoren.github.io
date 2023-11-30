@@ -2,7 +2,8 @@
 title: Q2 Software digital banking
 string_date: ""
 clip_url: https://www.q2.com/
-image_url: /images/thumbnails/q2.png
+image_url: /images/thumbnails/q2.svg
+padding: true
 deferred_image: false
 tools: Docker, JavaScript, Jenkins, Linux, Nomad, Python, SQL Server, Windows
 ---
