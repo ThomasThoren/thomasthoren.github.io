@@ -7,5 +7,5 @@ image_border: true
 deferred_image: true
 tools: CSS, HTML, JavaScript, Linux, PostGIS, PostgreSQL, Python (Flask), Selenium
 ---
-A web scraper that downloads New Orleans property sales
-and a web application that makes the archive searchable and visible on a map.
+A web scraper that downloaded New Orleans property sales
+and a web application that made the archive searchable and visible on a map.

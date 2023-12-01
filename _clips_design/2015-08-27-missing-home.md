@@ -7,6 +7,6 @@ image_alt: Missing Home
 deferred_image: true
 tools: AWS, Bash, JavaScript (Mapbox), Python
 ---
-This project combined text, photos and interactive design to present the stories of
+This project combined text, photos, and interactive design to present the stories of
 planned and unexpected demolitions in New Orleans following Hurricane Katrina.
-The project drew on FEMA databases, archived photos and on-the-ground reporting.
+The project drew on FEMA databases, archived photos, and on-the-ground reporting.

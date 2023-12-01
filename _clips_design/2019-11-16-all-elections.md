@@ -7,6 +7,6 @@ deferred_image: false
 tools: AWS, Bash, GIS, JavaScript (D3, Mapbox, React), Linux, Python
 ---
 Live election results for Louisiana using precinct-level maps.
-This requires aggregating precinct GIS files from state and parish offices before correlating the maps with
+This required aggregating precinct GIS files from state and parish offices before correlating the maps with
 precinct-level results from the Secretary of State.
-On election night, data processing scripts send results to a front end for constantly updating tables and maps.
+On election night, data processing scripts sent results to the front end for constantly updating tables and maps.

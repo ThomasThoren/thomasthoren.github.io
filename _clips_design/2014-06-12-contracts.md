@@ -7,5 +7,5 @@ image_border: true
 deferred_image: true
 tools: AWS, CSS, HTML, JavaScript, Linux, PostgreSQL, Python (Flask), Selenium
 ---
-A web scraper that downloads the City of New Orleans' contracts
-and a web application that makes the archive searchable.
+A web scraper that downloaded the City of New Orleans' contracts
+and a web application that allowed users to search the archive.
